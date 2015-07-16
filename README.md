@@ -14,3 +14,6 @@ Can use
 `-(instancetype)initWithString:(NSString *)str symbol:(NSString *)sym fontMarked:(UIFont *)font1 colorMarked:(UIColor *)color1 fontUnmarked:(UIFont *)font2 colorUnmarked:(UIColor *)color2;`
 
 to set customised symbol.
+
+##License
+MIT License
