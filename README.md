@@ -1,4 +1,4 @@
-# NSAttrbuttedString-MarkSymbol
+# NSAttrbuttedString+MarkSymbol
 a category of NSAttributedString.
 
 can set font and color for marked part of string.
