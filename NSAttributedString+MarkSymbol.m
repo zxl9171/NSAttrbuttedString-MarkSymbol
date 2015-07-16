@@ -3,7 +3,7 @@
 //  TouchPal
 //
 //  Created by Zhen Xiaolei on 7/16/15.
-//  Copyright (c) 2015 CooTek. All rights reserved.
+//  Copyright (c) 2015 Zhen Xiaolei. All rights reserved.
 //
 
 #import "NSAttributedString+MarkSymbol.h"
@@ -11,7 +11,7 @@
 #import <CoreText/CTFont.h>
 @implementation NSAttributedString(MarkSymbol)
 
--(instancetype)initWithString:(NSString *)_str symbol:(NSString *)sym fontIn:(UIFont *)font1 colorIn:(UIColor *)color1 fontOut:(UIFont *)font2 colorOut:(UIColor *)color2{
+-(instancetype)initWithString:(NSString *)_str symbol:(NSString *)sym fontMarked:(UIFont *)font1 colorMarked:(UIColor *)color1 fontUnmarked:(UIFont *)font2 colorUnmarked:(UIColor *)color2{
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:_str];
     NSMutableString *str = [[NSMutableString alloc] initWithString:_str];;
     NSRange rangeAll;
@@ -40,9 +40,9 @@
     return string;
 }
 
--(instancetype) initWithString:(NSString *)str fontIn:(UIFont *)font1 colorIn:(UIColor *)color1 fontOut:(UIFont *)font2 colorOut:(UIColor *)color2{
-    return [self initWithString:str symbol:@"@@" fontIn:font1 colorIn:color1 fontOut:font2
-                       colorOut:color2];
+-(instancetype)initWithString:(NSString *)str fontMarked:(UIFont *)font1 colorMarked:(UIColor *)color1 fontUnmarked:(UIFont *)font2 colorUnmarked:(UIColor *)color2{
+    return [self initWithString:str symbol:@"@@" fontMarked:font1 colorMarked:color1 fontUnmarked:font2
+                       colorUnmarked:color2];
 }
 
 @end
